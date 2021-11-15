@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="dateTime">
+        <div class="areaStats">
+            <h2>Today</h2>
+            <h1 id="location">Location</h1>
+            <h2 style="margin-top: -1.5em;" class="country">Country</h2>
+            <h2 style="margin-top:0.25em ;" class="date">Date</h2>
+        </div>
+        <div id="currTime">
+            <h1 id="time">Time</h1>
+        </div>
+    </div>
+    <div class="currentStat">
+        <div id="currentWeatherIcon">
+            <svg id="currentWeathersvg" width="180.618" height="154.789" viewbox="0 0 180.618 154.789">
+                <g id="Group_8" data-name="Group 8" transform="translate(-208.95 -145.857)">
+                    <g id="Group_7" data-name="Group 7" transform="translate(209 145.907)">
+                        <path id="Path_1" data-name="Path 1"
+                            d="M203.979,228.229a45.246,45.246,0,0,1,43.59-16.759,41.91,41.91,0,0,1,5.7,1.425,44.97,44.97,0,1,0-85.327,25.494c.259-.253.517-.506.781-.754A38.788,38.788,0,0,1,203.979,228.229Z"
+                            transform="translate(-120.849 -140.479)" fill="#ffc400" stroke="#ffc401" stroke-miterlimit="10"
+                            stroke-width="10" />
+                        <path id="Path_3" data-name="Path 3"
+                            d="M246.321,113.139V94.63c0-5.308-8.251-5.319-8.251,0v18.509C238.07,118.446,246.321,118.457,246.321,113.139ZM242.2,94.63Z"
+                            transform="translate(-154.45 -90.645)" fill="#f7a700" stroke="#231815" stroke-miterlimit="10"
+                            stroke-width="0.1" />
+                        <path id="Path_4" data-name="Path 4"
+                            d="M168.617,133.891c2.657,4.6,9.785.446,7.15-4.164l-9.257-16.033c-2.657-4.6-9.785-.446-7.15,4.164Zm3.564-2.085-9.257-16.033Z"
+                            transform="translate(-118.896 -101.782)" fill="#f7a700" stroke="#231815" stroke-miterlimit="10"
+                            stroke-width="0.1" />
+                        <path id="Path_5" data-name="Path 5"
+                            d="M123.059,179.438l-16.033-9.257c-4.6-2.662-8.768,4.466-4.164,7.15l16.033,9.257C123.488,189.223,127.663,182.095,123.059,179.438Zm-18.113-5.693,16.033,9.274Z"
+                            transform="translate(-92.583 -135.47)" fill="#f7a700" stroke="#231815" stroke-miterlimit="10"
+                            stroke-width="0.1" />
+                        <path id="Path_6" data-name="Path 6"
+                            d="M83.8,257.15h18.509c5.308,0,5.319-8.25,0-8.25H83.8C78.485,248.9,78.479,257.15,83.8,257.15Zm18.509-4.125Z"
+                            transform="translate(-79.811 -171.159)" fill="#f7a700" stroke="#231815" stroke-miterlimit="10"
+                            stroke-width="0.1" />
+                        <path id="Path_9" data-name="Path 9"
+                            d="M352.437,186.547l16.033-9.257c4.6-2.657.445-9.785-4.164-7.15L348.273,179.4C343.675,182.081,347.828,189.21,352.437,186.547Zm13.949-12.816-16.028,9.274Z"
+                            transform="translate(-205.597 -132.706)" fill="#f7a700" stroke="#231815" stroke-miterlimit="10"
+                            stroke-width="0.1" />
+                        <path id="Path_10" data-name="Path 10"
+                            d="M308.15,133.889l9.257-16.033c2.662-4.6-4.466-8.768-7.15-4.164L301,129.726C298.365,134.335,305.494,138.493,308.15,133.889Zm5.693-18.113-9.252,16.033Z"
+                            transform="translate(-182.38 -101.783)" fill="#f7a700" stroke="#231815" stroke-miterlimit="10"
+                            stroke-width="0.1" />
+                        <path id="Path_17" data-name="Path 17"
+                            d="M341.928,258.53c.033-.71.06-1.425.066-2.14a4.092,4.092,0,0,1-.423,1.9Z"
+                            transform="translate(-200.894 -174.524)" fill="#231815" stroke="#231815" stroke-miterlimit="10"
+                            stroke-width="0.1" />
+                        <path id="Path_20" data-name="Path 20"
+                            d="M297.545,305.984a24.64,24.64,0,0,1-15.5,24.295c-4.466,1.711-8.938,1.623-13.591,1.623H204.942c-3.014,0-6.05.027-9.048,0a30.092,30.092,0,0,1-27.5-42.413,29.64,29.64,0,0,1,3.3-5.709c.429-.578.875-1.133,1.342-1.65a30.594,30.594,0,0,1,32.259-8.9,4.245,4.245,0,0,0,4.659-1.9,36.086,36.086,0,0,1,44.536-13.085c.479.209.952.424,1.414.649s1.067.55,1.59.82a36.852,36.852,0,0,1,17.381,20.962,3.5,3.5,0,0,0,2.921,2.992C288.508,285.957,296.935,294.862,297.545,305.984Z"
+                            transform="translate(-122.682 -182.788)" fill="none" stroke="#707070" stroke-width="1" />
+                        <path id="Path_21" data-name="Path 21"
+                            d="M279.633,277.453a28.464,28.464,0,0,1-9.752,55.207H192.518a34.234,34.234,0,1,1,10.55-66.8,40.565,40.565,0,0,1,48.117-15.489l.55.209a39.791,39.791,0,0,1,7.365,3.85c.121.077.242.154.358.237a40.664,40.664,0,0,1,14.719,17.843c.523,1.232.99,2.5,1.392,3.79A27.962,27.962,0,0,1,279.633,277.453Zm-.957,49.459a24.6,24.6,0,0,0,15.5-24.295c-.611-11.122-9.037-20.027-19.7-22.337a3.5,3.5,0,0,1-2.921-2.992,36.852,36.852,0,0,0-17.381-20.962c-.55-.286-1.051-.55-1.59-.82s-.935-.44-1.414-.649a36.086,36.086,0,0,0-44.536,13.085,4.221,4.221,0,0,1-4.659,1.9,30.594,30.594,0,0,0-32.259,8.9c-.468.55-.913,1.1-1.342,1.65a29.641,29.641,0,0,0-3.3,5.709,30.092,30.092,0,0,0,27.5,42.413c3.014.027,6.05,0,9.048,0h63.463C269.737,328.535,274.209,328.623,278.675,326.912Z"
+                            transform="translate(-119.312 -179.422)" fill="#007fff" stroke="#0072e6" stroke-width="3" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="currentWeather">
+            <h1 class="currentTemp"><span class="currentTemp1">Temp</span><sup>°</sup>C</h1>
+            <h2 class="weather">Partly Cloudy</h2>
+        </div>
+        <div></div>
+    </div>
+    <div class="weatherStat">
+        <div class="column1">
+            <svg width="22" height="31.59" viewbox="0 0 22 31.59">
+                <defs>
+                  <lineargradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientunits="objectBoundingBox">
+                    <stop offset="0.36" stop-color="#e2edff"/>
+                    <stop offset="1" stop-color="#85c7ff"/>
+                  </lineargradient>
+                </defs>
+                <g id="_2142686_arrow_clockwise_swirl_tornado_twister_icon" data-name="2142686_arrow_clockwise_swirl_tornado_twister_icon" transform="translate(-5 -0.29)">
+                  <path id="Path_11" data-name="Path 1" d="M11,22.8c1.74-2.24,5.56-3.8,10-3.8,6.63,0,6.69,6,0,6Z" fill="url(#linear-gradient)"/>
+                  <path id="Path_2" data-name="Path 2" d="M21,18c-4.27,0-8.1,1.35-10.25,3.56C8.41,20.14,7,18.2,7,16a6.07,6.07,0,0,1,2.15-4.46c1.59-1.48,5.33-3.76,13-3.66h1.42l-.2.07a6,6,0,0,0-2.18,1.39l-2.94,2.94,1.41,1.41L26.41,7,19.71.29,18.29,1.71,21,4.42a6,6,0,0,0,2.3,1.43H22.09c-6.28,0-11.29,1.41-14.3,4.2A8.12,8.12,0,0,0,5,16c0,5.7,6.88,10,16,10,4.12,0,6-2.07,6-4S25.13,18,21,18Zm0,6a22.22,22.22,0,0,1-8.34-1.49A13.39,13.39,0,0,1,21,20c2.59,0,4,1,4,2S23.6,24,21,24Z" fill="#1282ff"/>
+                  <path id="Path_31" data-name="Path 3" d="M9,24.87a4.81,4.81,0,0,0,0,.63c0,2.63,2.11,5,5.63,6.38L15.36,30C12.67,29,11,27.31,11,25.56,11,25.54,9,24.87,9,24.87Z" fill="#1282ff"/>
+                </g>
+              </svg>
+                <p style="font-weight: 700">Wind:
+                    <h3 style="margin-top: -0.5em;" id="wind1">Wind</h3>km/hr</p>
+        </div>
+        <div class="column2">
+            <svg width="18" height="23" viewbox="0 0 18 23">
+                <g id="_2303155_drop_essence_flow_humidity_life_icon" data-name="2303155_drop_essence_flow_humidity_life_icon" transform="translate(-7 -4.75)">
+                  <path id="Path_41" data-name="Path 4" d="M24,18.75a8,8,0,0,1-16,0c0-4.42,8-13,8-13S24,14.33,24,18.75Z" fill="none" stroke="#0832ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path_51" data-name="Path 5" d="M13.06,13.51c.75-1.12,1.61-2.27,2.48-3.34" fill="none" stroke="#0832ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                  <path id="Path_61" data-name="Path 6" d="M10.81,18.43a7.25,7.25,0,0,1,1.1-3" fill="none" stroke="#0832ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                  <path id="Path_7" data-name="Path 7" d="M24,18.75c0,4.42-3.58,7-8,7s-8-2.58-8-7" fill="none" stroke="#0832ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+              
+            <p style="font-weight: 700;" id="humidity1" >Humidity:<h3 id="humidity">Humidity</h3></p>
+        </div>
+        <div class="column3">
+            <svg width="25.047" height="21.018" viewbox="0 0 25.047 21.018">
+                <g id="Layer_x0020_1" transform="translate(-4.02 -8.52)">
+                  <g id="_740098240" transform="translate(4.02 8.52)">
+                    <path id="Path_8" data-name="Path 8" d="M21.411,45.828a.557.557,0,0,1,1.043.394l-.68,1.813a.559.559,0,0,1-1.047-.394Zm4.436,0a.557.557,0,0,1,1.043.389l-1.249,3.366A.557.557,0,1,1,24.6,49.2l1.249-3.366Zm3.867,0a.557.557,0,0,1,1.043.394l-.68,1.813a.557.557,0,0,1-1.043-.394Z" transform="translate(-13.23 -28.932)" fill="#0e6096"/>
+                    <path id="Path_91" data-name="Path 9" d="M6.974,23.509c-.085-.022-.175-.045-.26-.072C6.8,23.465,6.889,23.487,6.974,23.509Zm-.43-.13a3.685,3.685,0,0,1-.488-.219A3.685,3.685,0,0,0,6.544,23.38Zm-.488-.219a3.722,3.722,0,0,1-1.477-1.477A3.722,3.722,0,0,0,6.056,23.16ZM4.579,21.683A3.391,3.391,0,0,1,4.36,21.2,3.391,3.391,0,0,0,4.579,21.683ZM4.3,21.025c-.027-.085-.049-.175-.072-.264C4.252,20.851,4.275,20.94,4.3,21.025Zm3.437-4.762a6.8,6.8,0,0,1,.407-1.916,6.956,6.956,0,0,0-.407,1.916Zm8.616-6.19a3.5,3.5,0,0,1,6.382,1.477,4.475,4.475,0,0,1,.649-.045,4.9,4.9,0,0,1,4.382,7.1,2.655,2.655,0,0,0-1.235-.3,4.694,4.694,0,0,0-4.655-4.086,4.834,4.834,0,0,0-.846.076,6.891,6.891,0,0,0-4.677-4.216Z" transform="translate(-4.136 -8.52)" fill="#0e6096" fill-rule="evenodd"/>
+                    <path id="Path_101" data-name="Path 10" d="M7.69,25.244a3.67,3.67,0,0,1-.067-7.34A6.878,6.878,0,0,1,20.916,15.93a4.834,4.834,0,0,1,.846-.076,4.694,4.694,0,0,1,4.655,4.086,2.652,2.652,0,0,1,.067,5.3c-6.266.085-12.532,0-18.794,0Z" transform="translate(-4.02 -10.161)" fill="#1ab5ed" fill-rule="evenodd"/>
+                  </g>
+                </g>
+              </svg>
+              
+            <p style="font-weight: 700;" class="rain">Rain:<h3 id="rain">Rain</h3></p>
+        </div>
+    </div>
+    <div class="daycontainer7">
+        <ul id="list">
+            <li>
+                <div class="container1">
+                    <div class="content">
+                        <h4 id="dayPresent" class="time">Time</h4>
+                        <img id="day1img" src="CloudThunderstorm.png" alt="">
+                        <p><span id="tempPresentDay">13</span> <sup>°</sup>C</p>
+                        <p class="dayDesc" id="dayDesc1"></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <div class="content">
+                        <h4 id="day2" class="time">Time</h4>
+                        <img src="CloudThunderstorm.png" alt="">
+                        <p class="temp1"><span id="temp2">13</span> <sup>°</sup>C</p>
+                        <p class="dayDesc" id="dayDesc2"></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <div class="content">
+                        <h4 id="day3" class="time">Time</h4>
+                        <img src="CloudThunderstorm.png" alt="">
+                        <p class="temp1"><span id="temp3">13</span> <sup>°</sup>C</p>
+                        <p class="dayDesc" id="dayDesc3"></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <div class="content">
+                        <div>
+                            <h4 id="day4" class="time">Time</h4>
+                            <img src="CloudThunderstorm.png" alt="">
+                        </div>
+                        <p class="temp1"><span id="temp4">13</span> <sup>°</sup>C</p>
+                        <p class="dayDesc" id="dayDesc4"></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <div class="content">
+                        <h4 id="day5" class="time">Time</h4>
+                        <img src="CloudThunderstorm.png" alt="">
+                        <p class="temp1"><span id="temp5">13</span> <sup>°</sup>C</p>
+                        <p class="dayDesc" id="dayDesc5"></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <div class="content">
+                        <h4 id="day6" class="time">Time</h4>
+                        <img src="CloudThunderstorm.png" alt="">
+                        <p class="temp1"><span id="temp6">13</span> <sup>°</sup>C</p>
+                        <p class="dayDesc" id="dayDesc6"></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <div class="content">
+                        <h4 id="day7" class="time">Time</h4>
+                        <img src="CloudThunderstorm.png" alt="">
+                        <p class="temp1"><span id="temp7">13</span> <sup>°</sup>C</p>
+                        <p class="dayDesc" id="dayDesc7"></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script>
+        gsap.from('.areaStats',{opacity: 0,duration:2,x:-50});
+        gsap.from('#currTime',{opacity:0,duration:1,x:50});
+        gsap.from('#list',{opacity:0,duration:3,y:100});
+        gsap.from('.currentWeather',{opacity:0,duration:2,y:-100})
+    </script>
+</body>
+
+</html>
